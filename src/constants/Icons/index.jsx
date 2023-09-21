@@ -18,8 +18,13 @@ import privacy from "./privacy.svg";
 import saveIcon from "./saveIcon.svg";
 import star from "./star.svg";
 import third from "./thirdRun.svg";
+import star2 from "./star2.svg";
+import hackstar from "./hackstar.svg";
+import techbulb from "./techbulb.svg";
 
 export const SVG = {
+  hackstar,
+  techbulb,
   logolink,
   arrow,
   award,
@@ -27,6 +32,7 @@ export const SVG = {
   moon,
   faq,
   firstRun,
+  star2,
   privacy,
   heroman,
   patnerandsponsort,
