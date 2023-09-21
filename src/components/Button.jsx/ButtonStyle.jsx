@@ -9,4 +9,5 @@ export const ButtonWrapper = styled.button`
   color: white;
   font-weight: 600;
   border-radius: 4px;
+  outline: none;
 `;

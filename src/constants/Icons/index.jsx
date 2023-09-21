@@ -21,13 +21,17 @@ import third from "./thirdRun.svg";
 import star2 from "./star2.svg";
 import hackstar from "./hackstar.svg";
 import techbulb from "./techbulb.svg";
+import graystar from "./graystar.svg";
+import mobilehambuger from "./mobilehambuger.svg";
 
 export const SVG = {
   hackstar,
+  mobilehambuger,
   techbulb,
   logolink,
   arrow,
   award,
+  graystar,
   blub,
   moon,
   faq,

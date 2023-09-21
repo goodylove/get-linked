@@ -12,6 +12,21 @@ export const NavWrapper = styled.nav`
     list-style-type: none;
     gap: 35px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+  }
+  .mobile {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .logo {
+      width: 100px;
+    }
+    ul {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
   }
 `;

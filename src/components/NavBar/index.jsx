@@ -24,14 +24,18 @@ const navLink = [
 function NavBar() {
   return (
     <NavWrapper>
-      <img src={SVG.logolink} alt="" />
+      <img src={SVG.logolink} alt="logo" className="logo" />
 
-      <ul>
-        {navLink.map((nav, index) => (
-          <li key={index}>{nav.name}</li>
-        ))}
-        <Button>Risgister</Button>
-      </ul>
+      <div>
+        <ul>
+          {navLink.map((nav, index) => (
+            <li key={index}>{nav.name}</li>
+          ))}
+          <Button>Risgister</Button>
+        </ul>
+        {/* mobile */}
+        <img src={SVG.mobilehambuger} alt="" className="mobile" />
+      </div>
     </NavWrapper>
   );
 }
