@@ -23,9 +23,13 @@ import hackstar from "./hackstar.svg";
 import techbulb from "./techbulb.svg";
 import graystar from "./graystar.svg";
 import mobilehambuger from "./mobilehambuger.svg";
+import purpleStar from "./purplestar.svg";
+import pinkstart from "./pinkstar.svg";
 
 export const SVG = {
   hackstar,
+  purpleStar,
+  pinkstart,
   mobilehambuger,
   techbulb,
   logolink,

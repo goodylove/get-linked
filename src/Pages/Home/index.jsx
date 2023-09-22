@@ -1,5 +1,8 @@
 import Button from "../../components/Button.jsx";
 import NavBar from "../../components/NavBar";
+import SectionFour from "../../components/sectionFour/index.jsx";
+import SectionTwo from "../../components/sectionTwo/index.jsx";
+import SectionThree from "../../components/sectionthree/index.jsx";
 import { Colors } from "../../constants/Colors/index.jsx";
 import { SVG } from "../../constants/Icons";
 import { HomeWrapper, SectionWrapper } from "./homeStyle";
@@ -63,6 +66,19 @@ function Home() {
           />
         </div>
       </section>
+      <div className="line"></div>
+
+      <SectionTwo />
+      <div className="line"></div>
+
+      {/* section three */}
+
+      <SectionThree />
+      <div className="line"></div>
+
+      {/* <SectionFour /> */}
+
+      {/* section four */}
     </HomeWrapper>
   );
 }

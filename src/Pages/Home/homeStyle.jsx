@@ -52,11 +52,16 @@ export const HomeWrapper = styled.main`
         line-height: 33.2px;
         margin: 1.6rem 0;
       }
+      .time-wrapper{
+        font-family:  Unica One,cursive;
+      }
       .timer {
         color: #ffffff;
         font-size: 48px;
         display: flex;
         margin: 1.5rem  0;
+    font-family:  Unica One,cursive;
+
         gap: 10px;
         Line height 63.84px ;
         span {
@@ -75,6 +80,7 @@ export const HomeWrapper = styled.main`
           left: 22rem;
           top: -18px;
           width: 30px;
+          object-fit:contain;
         }
       }
     }
@@ -91,6 +97,27 @@ export const HomeWrapper = styled.main`
       }
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// media queries
 
   @media screen and (max-width:1000px){
     .section-one {
@@ -225,7 +252,7 @@ export const HomeWrapper = styled.main`
      .hr-innovation {
     color: white;
     width: 80%;
-    font-size:12px;
+    font-size:10px;
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -252,12 +279,14 @@ export const HomeWrapper = styled.main`
         line-height: 20.2px;
         margin: 1rem 0;
       }
+      
       .timer {
         color: #ffffff;
         font-size: 48px;
         display: flex;
         margin: 1.5rem  0;
         text-align: center;
+       
         gap: 10px;
         Line height 63.84px ;
         span {
@@ -276,14 +305,14 @@ export const HomeWrapper = styled.main`
         position: relative;
 
         .saveIcon{
-            width:40px
+            width:23px
         }
         .hackstar{
             width:30px
         }
         .techbulb {
           position: absolute;
-          left: 17.9rem;
+          left: 14.9rem;
           top: -20px;
           width: 30px;
         }
