@@ -25,9 +25,25 @@ import graystar from "./graystar.svg";
 import mobilehambuger from "./mobilehambuger.svg";
 import purpleStar from "./purplestar.svg";
 import pinkstart from "./pinkstar.svg";
+import faqman from "./faqman.svg";
+import pinkline from "./pinkline.svg";
+import one from "./one.svg";
+import two from "./two.svg";
+import three from "./three.svg";
+import four from "./four.svg";
+import five from "./five.svg";
+import six from "./six.svg";
 
 export const SVG = {
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  pinkline,
   hackstar,
+  faqman,
   purpleStar,
   pinkstart,
   mobilehambuger,

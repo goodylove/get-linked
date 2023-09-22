@@ -6,6 +6,9 @@ import SectionThree from "../../components/sectionthree/index.jsx";
 import { Colors } from "../../constants/Colors/index.jsx";
 import { SVG } from "../../constants/Icons";
 import { HomeWrapper, SectionWrapper } from "./homeStyle";
+import SingleFaq from "./../../components/FAQ/singleFaq";
+import FrequentlyAskQuestion from "../../components/FAQ/index.jsx";
+import TimeLine from "../../components/timelinesection/index.jsx";
 
 function Home() {
   return (
@@ -76,8 +79,12 @@ function Home() {
       <SectionThree />
       <div className="line"></div>
 
-      {/* <SectionFour /> */}
+      <SectionFour />
+      <div className="line"></div>
 
+      <FrequentlyAskQuestion />
+      <div className="line"></div>
+      <TimeLine />
       {/* section four */}
     </HomeWrapper>
   );

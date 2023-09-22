@@ -1,6 +1,7 @@
 import { Colors } from "../../constants/Colors";
 import { SVG } from "../../constants/Icons";
 import Button from "../Button.jsx";
+import { keyAttribute } from "./keyattributedata";
 import { SectionFourWrapper } from "./sectionfourStyle";
 function SectionFour() {
   return (
@@ -17,7 +18,7 @@ function SectionFour() {
         >
           <img src={SVG.purpleStar} alt="" />
         </div>
-        <img src={SVG.friends} alt="bulb" width={450} />
+        <img src={SVG.friends} alt="bulb" className="sec-img" />
         <div>
           <img src={SVG.graystar} alt="" className="middlestar" />
         </div>
@@ -39,49 +40,14 @@ function SectionFour() {
           <h3>Key attributes</h3>
         </div>
         <div>
-          <p>
-            <span style={{ color: `${Colors.pink}` }}>
-              Innovation and Creativity:
-            </span>
-            Evaluate the uniqueness and creativity of the solution. Consider
-            whether it addresses a real-world problem in a novel way or
-            introduces innovative features.
-          </p>
-
-          <p>
-            <span style={{ color: `${Colors.pink}` }}> Functionality:</span>
-            Assess how well the solution works. Does it perform its intended
-            functions effectively and without major issues? Judges would
-            consider the completeness and robustness of the solution.
-          </p>
-
-          <p>
-            <span style={{ color: `${Colors.pink}` }}>
-              Impact and Relevance:
-            </span>
-            Determine the potential impact of the solution in the real world.
-            Does it address a significant problem, and is it relevant to the
-            target audience? Judges would assess the potential social, economic,
-            or environmental benefits.
-          </p>
-
-          <p>
-            <span style={{ color: `${Colors.pink}` }}>
-              Technical Complexity:
-            </span>
-            Evaluate the technical sophistication of the solution. Judges would
-            consider the complexity of the code, the use of advanced
-            technologies or algorithms, and the scalability of the solution.
-          </p>
-
-          <p>
-            <span style={{ color: `${Colors.pink}` }}>
-              Adherence to Hackathon Rules:
-            </span>
-            Judges will Ensure that the team adhered to the rules and guidelines
-            of the hackathon, including deadlines, use of specific technologies
-            or APIs, and any other competition-specific requirements.
-          </p>
+          {keyAttribute.map(({ title, value }) => {
+            return (
+              <p>
+                <span style={{ color: `${Colors.pink}` }}>{title}</span>
+                {value}
+              </p>
+            );
+          })}
         </div>
 
         <p>
