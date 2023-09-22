@@ -9,6 +9,8 @@ import { HomeWrapper, SectionWrapper } from "./homeStyle";
 import SingleFaq from "./../../components/FAQ/singleFaq";
 import FrequentlyAskQuestion from "../../components/FAQ/index.jsx";
 import TimeLine from "../../components/timelinesection/index.jsx";
+import PriceAndReward from "../../components/priceandreward/index.jsx";
+import Sponsor from "../../components/sponsor/index.jsx";
 
 function Home() {
   return (
@@ -85,7 +87,10 @@ function Home() {
       <FrequentlyAskQuestion />
       <div className="line"></div>
       <TimeLine />
-      {/* section four */}
+      <div className="line"></div>
+      <PriceAndReward />
+      <div className="line"></div>
+      <Sponsor />
     </HomeWrapper>
   );
 }

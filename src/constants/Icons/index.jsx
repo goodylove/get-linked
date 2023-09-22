@@ -33,8 +33,10 @@ import three from "./three.svg";
 import four from "./four.svg";
 import five from "./five.svg";
 import six from "./six.svg";
+import thirdRuner from "./thirdRun.svg";
 
 export const SVG = {
+  thirdRuner,
   one,
   two,
   three,

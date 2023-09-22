@@ -337,4 +337,3 @@ export const HomeWrapper = styled.main`
   }
   
 `;
-//   inset: 0px 0px auto auto;
