@@ -11,6 +11,9 @@ import FrequentlyAskQuestion from "../../components/FAQ/index.jsx";
 import TimeLine from "../../components/timelinesection/index.jsx";
 import PriceAndReward from "../../components/priceandreward/index.jsx";
 import Sponsor from "../../components/sponsor/index.jsx";
+import Licensepolicy from "../../components/privacy/licensepolicy.jsx";
+import PravicySection from "./../../components/privacy/index";
+import Footer from "../../components/footer/index.jsx";
 
 function Home() {
   return (
@@ -91,6 +94,10 @@ function Home() {
       <PriceAndReward />
       <div className="line"></div>
       <Sponsor />
+      <div className="line"></div>
+      <PravicySection />
+      <div className="line"></div>
+      <Footer />
     </HomeWrapper>
   );
 }

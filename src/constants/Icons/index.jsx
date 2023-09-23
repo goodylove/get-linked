@@ -34,9 +34,23 @@ import four from "./four.svg";
 import five from "./five.svg";
 import six from "./six.svg";
 import thirdRuner from "./thirdRun.svg";
+import circle from "./circle.svg";
+import instagram from "./instagram.svg";
+import twiietr from "./twiiter.svg";
+import linkedin from "./linkedin.svg";
+import phonenum from "./phonenum.svg";
+import location from "./location .svg";
+import facebook from "./facebook.svg";
 
 export const SVG = {
   thirdRuner,
+  location,
+  facebook,
+  linkedin,
+  phonenum,
+  twiietr,
+  instagram,
+  circle,
   one,
   two,
   three,

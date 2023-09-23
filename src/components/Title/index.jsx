@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   h3 {
     color: ${Colors.pink};
     font-size: 22px;
-    line-height: 32.56px;
+    line-height: 20.56px;
   }
   h2 {
     color: white;
