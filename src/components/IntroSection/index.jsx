@@ -1,8 +1,22 @@
+import { useEffect, useState } from "react";
 import { Colors } from "../../constants/Colors";
 import { SVG } from "../../constants/Icons";
 import Button from "../Button.jsx/index.jsx";
 
 function IntroSection() {
+  const [time, setTime] = useState(new Date());
+
+  const hour = time.getHours().toString().padStart(2, "0");
+  const min = time.getMinutes().toString().padStart(2, "0");
+  const sec = time.getSeconds().toString().padStart(2, "0");
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section>
       <div className="h-[1px] w-full  bg-line"></div>
@@ -61,13 +75,16 @@ function IntroSection() {
 
           <div className=" md:justify-start justify-center flex items-center mt-6 text-white  font-unical text-[68px] gap-4">
             <span>
-              00<span className="text-sm">H</span>
+              {hour}
+              <span className="text-sm">H</span>
             </span>
             <span>
-              00<span className="text-sm">M</span>
+              {min}
+              <span className="text-sm">M</span>
             </span>
             <span>
-              00<span className="text-sm">S</span>
+              {sec}
+              <span className="text-sm">S</span>
             </span>
           </div>
         </div>

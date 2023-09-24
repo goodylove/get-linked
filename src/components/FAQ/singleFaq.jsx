@@ -1,49 +1,27 @@
-import styled from "styled-components";
-import { Colors } from "../../constants/Colors";
-
-function SingleFaq({ ques }) {
+function SingleFaq({ ques, answer, handleShowAnswer }) {
   return (
-    <SingleWrapper>
-      <div className="wrapper">
-        <div className="question">
-          <h4>{ques.question}</h4>
+    <div className="mt-10 transition-all">
+      <div className=" border-b-[1px] border-custom-pink cursor-pointer mt-3">
+        <div className="flex justify-between  items-center my-5">
+          <h4 className="text-white text-[12px] md:text-[14px]">
+            {ques.question}
+          </h4>
 
-          <span>+</span>
+          <span
+            className=" text-custom-highlight text-[25px]"
+            onClick={() => handleShowAnswer(ques.id)}
+          >
+            {answer === ques.id ? "-" : "+"}
+          </span>
         </div>
-        <p className="answer">yes</p>
+        <p
+          className={`text-white ${answer === ques.id ? "visible" : "hidden"}`}
+        >
+          yes
+        </p>
       </div>
-    </SingleWrapper>
+    </div>
   );
 }
 
 export default SingleFaq;
-
-const SingleWrapper = styled.div`
-  color: white;
-  border-bottom: 1px solid ${Colors.pink};
-  padding: 10px 0;
-  width: 360px;
-  margin: 10px 0;
-  cursor: pointer;
-  .wrapper {
-    width: 100%;
-    .question {
-      font-size: 10px;
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      justify-content: space-between;
-      span {
-        font-size: 20px;
-        font-weight: 700;
-        color: ${Colors.pink};
-      }
-    }
-    .answer {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 100px) {
-  }
-`;

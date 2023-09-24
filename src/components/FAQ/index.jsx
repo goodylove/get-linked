@@ -1,41 +1,55 @@
-import React from "react";
-import { FaqWrapper } from "./faqstyle";
+import React, { useState } from "react";
 import { SVG } from "./../../constants/Icons/index";
 import { frequentlyAskQues } from "./questiondata";
 import SingleFaq from "./singleFaq";
+import Title from "./../Title/index";
 
 export default function FrequentlyAskQuestion() {
-  return (
-    <FaqWrapper>
-      <div>
-        <img src={SVG.pinkstart} alt="" />
-        <div className="heading">
-          <h2>Frequently Ask </h2>
-          <h3>Question</h3>
-          <h5>
-            We got answers to the questions that you might want to ask about
-            getlinked Hackathon 1.0
-          </h5>
-        </div>
-        <div>
-          {frequentlyAskQues.map((question) => {
-            return <SingleFaq key={question.id} ques={question} />;
-          })}
-        </div>
-      </div>
+  const [activeAnswer, setActivateAnswer] = useState(1);
 
-      <div>
-        <img src={SVG.faqman} alt="" className="f-img" />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          textAlign: "end",
-        }}
-      >
-        <img src={SVG.star2} alt="" />
-      </div>
-    </FaqWrapper>
+  const handleActivateAnswer = (num) => {
+    setActivateAnswer(activeAnswer == num ? null : num);
+  };
+
+  return (
+    <>
+      <div className="h-[1px] w-full  bg-line"></div>
+
+      <section className="w-full flex justify-center items-center relative p-5">
+        <div className="bg-custom-light w-[15rem]  absolute md:w-[20rem] h-[17rem]  hidden md:flex   top-0  rounded-full      blur-2xl opacity-[0.3]"></div>
+        <div className="w-[80%] flex justify-center items-center flex-col md:flex-row gap-8">
+          <div>
+            <img src={SVG.pinkstart} alt="" />
+            <div className="heading">
+              <Title title=" Frequently Ask" text="Question" />
+
+              <h5 className="text-white">
+                We got answers to the questions that you might want to ask about
+                getlinked Hackathon 1.0
+              </h5>
+            </div>
+            <div>
+              {frequentlyAskQues.map((question) => {
+                return (
+                  <SingleFaq
+                    key={question.id}
+                    ques={question}
+                    handleShowAnswer={handleActivateAnswer}
+                    answer={activeAnswer}
+                  />
+                );
+              })}
+            </div>
+          </div>
+
+          <div>
+            <img src={SVG.faqman} alt="" className="f-img" />
+          </div>
+          <div>
+            <img src={SVG.star2} alt="" />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

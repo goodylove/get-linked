@@ -1,3 +1,4 @@
+import FrequentlyAskQuestion from "../../components/FAQ";
 import IntroSection from "../../components/IntroSection";
 import JudgingSection from "../../components/judging";
 import SectionTwo from "../../components/sectionTwo";
@@ -10,10 +11,10 @@ function Home() {
       <SectionTwo />
       <SectionThree />
       <JudgingSection />
+      <FrequentlyAskQuestion />
       {/* 
      >
 
-      <FrequentlyAskQuestion />
       <div className="line"></div>
 
       {window.innerWidth < 900 ? <MobileTimeLine /> : <TimeLine />}
