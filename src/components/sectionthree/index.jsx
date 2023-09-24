@@ -6,9 +6,9 @@ function SectionThree() {
       <div className="h-[1px] w-full  bg-line"></div>
 
       <section className=" w-[100%] flex justify-center items-center overflow-x-hidden ">
-        <div className="flex  md:flex-row flex-col w-[85%] justify-between items-center relative">
+        <div className="flex  md:flex-row  flex-col-reverse w-[85%] justify-between items-center relative">
           <div className="relative">
-            <div className="bg-custom-light  absolute md:w-[20rem] h-[17rem]    rounded-full   top-14  left-0    blur-2xl opacity-[0.3]"></div>
+            <div className="bg-custom-light w-[15rem]  absolute md:w-[20rem] h-[17rem]     rounded-full   top-8  left-[8rem]   md:left-0  blur-2xl opacity-[0.3]"></div>
 
             <div className="flex  justify-center items-center">
               <img src={SVG.graystar} alt="" />
@@ -40,7 +40,7 @@ function SectionThree() {
             alt="bulb"
             className="xl:w-[600px]  lg:w-[500px] md:w-[400px]"
           />
-          <div className="bg-custom-light  absolute w-[5rem] md:h-[17rem] h-[10rem]    right-0  rounded-full   top-[20rem]    md:right-[-6rem]  blur-2xl opacity-[0.3]"></div>
+          <div className="bg-custom-light  absolute w-[5rem] md:h-[17rem] h-[10rem]    top-[30rem] right-0  rounded-full   md:top-[20rem]    md:right-[-6rem]  blur-2xl opacity-[0.3]"></div>
         </div>
       </section>
     </>

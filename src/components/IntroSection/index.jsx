@@ -55,7 +55,7 @@ function IntroSection() {
             <br /> a chance to win a Big prize
           </p>
 
-          <div className="mt-4 flex justify-start">
+          <div className="mt-4 flex md:justify-start justify-center">
             <Button>Register</Button>
           </div>
 

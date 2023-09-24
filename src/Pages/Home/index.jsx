@@ -1,4 +1,5 @@
 import IntroSection from "../../components/IntroSection";
+import JudgingSection from "../../components/judging";
 import SectionTwo from "../../components/sectionTwo";
 import SectionThree from "../../components/sectionthree";
 
@@ -8,6 +9,7 @@ function Home() {
       <IntroSection />
       <SectionTwo />
       <SectionThree />
+      <JudgingSection />
       {/* 
      >
 
