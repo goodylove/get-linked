@@ -1,8 +1,11 @@
+import styled from "styled-components";
 import { SVG } from "../../constants/Icons";
 import Button from "../Button.jsx";
 import { NavWrapper } from "./NavBarStyle";
+import MobileNav from "./mobilenav";
+import { useState } from "react";
 
-const navLink = [
+export const navLink = [
   {
     name: "TimeLine",
     path: "",
@@ -22,6 +25,11 @@ const navLink = [
 ];
 
 function NavBar() {
+  const [toggle, setToogle] = useState(false);
+  const handleToggle = () => setToogle((prev) => !prev);
+  const handleClose = () => setToogle(false);
+  console.log(toggle);
+
   return (
     <NavWrapper>
       <img src={SVG.logolink} alt="logo" className="logo" />
@@ -34,10 +42,20 @@ function NavBar() {
           <Button>Risgister</Button>
         </ul>
         {/* mobile */}
-        <img src={SVG.mobilehambuger} alt="" className="mobile" />
+        <div>
+          <img
+            src={SVG.mobilehambuger}
+            alt=""
+            className="mobile"
+            onClick={handleToggle}
+          />
+        </div>
+        {toggle && <MobileNav toggle={handleClose} />}
       </div>
     </NavWrapper>
   );
 }
 
 export default NavBar;
+
+const Wrapper = styled.div``;

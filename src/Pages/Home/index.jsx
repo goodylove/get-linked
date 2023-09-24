@@ -14,6 +14,7 @@ import Sponsor from "../../components/sponsor/index.jsx";
 import Licensepolicy from "../../components/privacy/licensepolicy.jsx";
 import PravicySection from "./../../components/privacy/index";
 import Footer from "../../components/footer/index.jsx";
+import MobileTimeLine from "../../components/MobileTimeline/index.jsx";
 
 function Home() {
   return (
@@ -66,7 +67,7 @@ function Home() {
         <div className="right-side">
           <img src={SVG.graystar} alt="star" className="star" />
           <img
-            src="./heroImage .webp"
+            src="./heroImage (1).webp"
             alt=""
             width={500}
             color="gray"
@@ -89,7 +90,9 @@ function Home() {
 
       <FrequentlyAskQuestion />
       <div className="line"></div>
-      <TimeLine />
+
+      {window.innerWidth < 900 ? <MobileTimeLine /> : <TimeLine />}
+
       <div className="line"></div>
       <PriceAndReward />
       <div className="line"></div>

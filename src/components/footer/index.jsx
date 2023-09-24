@@ -93,7 +93,7 @@ const Wrapper = styled.footer`
       position: relative;
       .star2 {
         position: absolute;
-        left: 4rem;
+        left: 2rem;
         top: 70px;
         width: 20px;
       }
@@ -102,7 +102,7 @@ const Wrapper = styled.footer`
       position: relative;
       .star3 {
         position: absolute;
-        left: 8rem;
+        left: -2rem;
         top: 70px;
         width: 20px;
       }

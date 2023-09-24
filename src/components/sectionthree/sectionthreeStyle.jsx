@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "./../../constants/Colors/index";
+import { Colors } from "../../constants/Colors/index";
 
 export const SectionThreeWrapper = styled.section`
   margin: 1.2rem 0;
@@ -12,11 +12,13 @@ export const SectionThreeWrapper = styled.section`
   .sec-img {
     width: 400px;
   }
+
   .sec-three-left {
     position: relative;
     img {
       position: absolute;
     }
+
     h3 {
       color: ${Colors.pink};
       font-size: 22px;

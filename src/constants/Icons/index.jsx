@@ -38,7 +38,7 @@ import circle from "./circle.svg";
 import instagram from "./instagram.svg";
 import twiietr from "./twiiter.svg";
 import linkedin from "./linkedin.svg";
-import phonenum from "./phonenum.svg";
+import phonenum from "./ponenum.svg";
 import location from "./location .svg";
 import facebook from "./facebook.svg";
 

@@ -7,7 +7,7 @@ function SectionTwo() {
     <SectionTwoWrapper className="section-two">
       <div>
         <img src={SVG.pinkstart} alt="star" color="gray" />
-        <img src={SVG.litlestart} alt="bulb" className="sec-img" />
+        <img src={SVG.litlestart} alt="bulb" width={400} />
       </div>
       <div className="">
         <div className="intro-sec-two">

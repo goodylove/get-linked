@@ -3,7 +3,7 @@ import { Colors } from "../../constants/Colors";
 
 export const ButtonWrapper = styled.button`
   background: linear-gradient(to right, ${Colors.pink}, ${Colors.purple});
-  width: 168px;
+  width: 148px;
   height: 49px;
   border: none;
   color: white;
