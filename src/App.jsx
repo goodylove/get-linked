@@ -9,10 +9,14 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <main className="w-full">
       <NavBar />
-      <Contact />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/register" element={<Home />} />
+      </Routes>
+    </main>
   );
 }
 

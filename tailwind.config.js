@@ -18,6 +18,7 @@ module.exports = {
         "custom-highlight": "#d434fe",
         footer: "rgba(16, 11, 32, 1)",
         move: "#1c152e",
+        line: "hsla(0, 0%, 100%, 0.18)",
       },
       textColor: {
         "custom-purple": "#150E28",
