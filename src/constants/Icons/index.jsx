@@ -41,9 +41,11 @@ import linkedin from "./linkedin.svg";
 import phonenum from "./ponenum.svg";
 import location from "./location .svg";
 import facebook from "./facebook.svg";
+import elipse from "./elipse.svg";
 
 export const SVG = {
   thirdRuner,
+  elipse,
   location,
   facebook,
   linkedin,

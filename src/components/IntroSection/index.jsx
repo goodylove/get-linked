@@ -28,11 +28,11 @@ function IntroSection() {
               alt="bulb"
               className="absolute  right-12 md:right-14  md:top-[-35px] md:w-[50px] w-[20px] top-[-5px]"
             />
-            <h2 className="md:text-[60px] md:leading-[89.4px] font-[700] text-[32px] xl:[70px] ">
+            <h2 className="lg:text-[60px] md:leading-[89.4px] font-[700] text-[32px] xl:text-[72px] ">
               getlinked Tech
             </h2>
             <div className="flex justify-center">
-              <h2 className="xl:text-[60px] lg:text-[40px] md:leading-[89.4px] font-[700] text-[30px] ">
+              <h2 className="xl:text-[60px] lg:text-[40px] md:leading-[89.4px] font-[700] text-[32px] ">
                 Hackathons <span className=" text-custom-highlight ">1.0</span>
               </h2>
               <span className="flex">
@@ -55,7 +55,7 @@ function IntroSection() {
             <br /> a chance to win a Big prize
           </p>
 
-          <div className="mt-4">
+          <div className="mt-4 flex justify-start">
             <Button>Register</Button>
           </div>
 
@@ -72,7 +72,9 @@ function IntroSection() {
           </div>
         </div>
 
-        <div className="">
+        <div className=" relative">
+          <div className="bg-custom-light  absolute w-[20rem] h-[17rem]   hidden md:flex  rounded-full   top-14  left-0     blur-2xl opacity-[0.3]"></div>
+
           <img src={SVG.graystar} alt="star" />
           <img
             src="./heroImage (1).webp"

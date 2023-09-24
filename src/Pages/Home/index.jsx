@@ -1,21 +1,15 @@
 import IntroSection from "../../components/IntroSection";
+import SectionTwo from "../../components/sectionTwo";
+import SectionThree from "../../components/sectionthree";
 
 function Home() {
   return (
     <>
       <IntroSection />
-      {/* <div className="line"></div> */}
-      {/* 
       <SectionTwo />
-      <div className="line"></div>
-
-     
-
       <SectionThree />
-      <div className="line"></div>
-
-      <SectionFour />
-      <div className="line"></div>
+      {/* 
+     >
 
       <FrequentlyAskQuestion />
       <div className="line"></div>

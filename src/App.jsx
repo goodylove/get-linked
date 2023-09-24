@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-x-hidden">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
