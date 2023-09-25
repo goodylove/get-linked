@@ -1,5 +1,6 @@
 import FrequentlyAskQuestion from "../../components/FAQ";
 import IntroSection from "../../components/IntroSection";
+import Footer from "../../components/footer";
 import JudgingSection from "../../components/judging";
 import PriceAndReward from "../../components/priceandreward";
 import PravicySection from "../../components/privacy";
@@ -21,6 +22,7 @@ function Home() {
 
       <Sponsor />
       <PravicySection />
+      <Footer />
     </>
   );
 }
