@@ -1,11 +1,10 @@
-import styled from "styled-components";
 import { SVG } from "../../constants/Icons";
 import Title from "./../Title/index";
 import Licensepolicy from "./licensepolicy";
 
 function PravicySection() {
   return (
-    <Wrapper>
+    <section>
       <div>
         <Title title="Privacy Policy and " text="Terms" />
         <h3 style={{ color: "white", margin: "20px 0" }}>
@@ -21,35 +20,8 @@ function PravicySection() {
       <div>
         <img src={SVG.privac} alt="" />
       </div>
-    </Wrapper>
+    </section>
   );
 }
 
 export default PravicySection;
-
-const Wrapper = styled.section`
-  width: 80%;
-  margin: 1rem 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h3 {
-    margin-top: 1rem;
-  }
-  p {
-    color: white;
-    margin: 1rem 0;
-  }
-  img {
-    width: 400px;
-  }
-  @media (max-width: 1000px) {
-    flex-wrap: wrap;
-    flex-direction: column;
-    img {
-      width: 230px;
-    }
-  }
-`;
