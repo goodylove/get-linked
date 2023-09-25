@@ -7,7 +7,6 @@ import SectionTwo from "../../components/sectionTwo";
 import SectionThree from "../../components/sectionthree";
 import Sponsor from "../../components/sponsor";
 import TimeLine from "../../components/timelinesection";
-import MobileTimeLine from "./../../components/MobileTimeline/index";
 
 function Home() {
   return (
