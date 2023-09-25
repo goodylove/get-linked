@@ -1,82 +1,33 @@
-import styled from "styled-components";
 import { SVG } from "./../../constants/Icons/index";
 import Title from "./../Title/index";
 
 function PriceAndReward() {
   return (
-    <Wrapper>
-      <div>
-        <img src={SVG.pinkstart} alt="" />
-        <img src={SVG.award} alt="" className="award" />
-        <img src={SVG.star2} alt="" />
-      </div>
+    <>
+      <div className="h-[1px] w-full  bg-line"></div>
+      <section className="w-full flex justify-center items-center mt-10">
+        <div className="flex w-[80%] md:flex-row flex-col justify-center gap-2 ">
+          <div className="relative">
+            <img src={SVG.pinkstart} alt="" />
+            <img src={SVG.award} alt="" className="" />
+            <img src={SVG.star2} alt="" />
+            <div className="bg-custom-light w-[15rem]  absolute md:w-[20rem] h-[17rem]     rounded-full   top-8  left-[8rem]   md:left-0  blur-2xl opacity-[0.3]"></div>
+          </div>
 
-      <div className="right">
-        <Title title="Prizes and" text="Rewards" />
-        <p>
-          Highlight of the prizes or rewards for winners and <br />
-          for participants.
-        </p>
-        <img src={SVG.thirdRuner} className="winner" />
-      </div>
-      <img src={SVG.star2} alt="" />
-    </Wrapper>
+          <div className="right relative">
+            <div className="bg-custom-light  absolute w-[5rem] md:h-[17rem] h-[10rem]    top-[9rem] right-0  rounded-full   md:top-[10rem]    md:right-[-60px]  blur-2xl opacity-[0.3]"></div>
+            <Title title="Prizes and" text="Rewards" />
+            <p className="mt-5 text-white text-center  md:text-start ">
+              Highlight of the prizes or rewards for winners and for
+              participants.
+            </p>
+            <img src={SVG.thirdRuner} className="w-[500px]" />
+          </div>
+          <img src={SVG.star2} alt="star white" className="w-[20px]" />
+        </div>
+      </section>
+    </>
   );
 }
 
 export default PriceAndReward;
-
-const Wrapper = styled.section`
-  width: 80%;
-  margin: 1.3rem 0;
-  display: flex;
-  gap: 1.3rem;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    color: white;
-    margin: 2rem 0;
-    font-size: 14px;
-    line-height: 20px.;
-  }
-  .award {
-    width: 400px;
-    object-fit: cover;
-    margin-top: 70px;
-  }
-  .right {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    .winner {
-      width: 500px;
-      object-fit: cover;
-      margin-top: 50px;
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    p {
-      color: white;
-      margin: 1rem 0;
-      font-size: 12px;
-      line-height: 20px.;
-    }
-
-    .award {
-      width: 300px;
-      margin: 0px;
-    }
-    .right {
-      text-align: center;
-      .winner {
-        width: 300px;
-      }
-    }
-  }
-`;

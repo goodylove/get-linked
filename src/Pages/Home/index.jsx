@@ -1,6 +1,7 @@
 import FrequentlyAskQuestion from "../../components/FAQ";
 import IntroSection from "../../components/IntroSection";
 import JudgingSection from "../../components/judging";
+import PriceAndReward from "../../components/priceandreward";
 import SectionTwo from "../../components/sectionTwo";
 import SectionThree from "../../components/sectionthree";
 import TimeLine from "../../components/timelinesection";
@@ -15,6 +16,7 @@ function Home() {
       <JudgingSection />
       <FrequentlyAskQuestion />
       <TimeLine />
+      <PriceAndReward />
 
       {/* 
      >

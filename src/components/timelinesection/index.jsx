@@ -6,10 +6,10 @@ function TimeLine() {
   return (
     <>
       <div className="h-[1px] w-full  bg-line"></div>
-      <section className="w-full flex justify-center items-center  mt-5 ">
+      <section className="w-full flex justify-center items-center  my-10 ">
         <div className="flex flex-col justify-center items-center w-full">
           <div className="flex flex-col justify-center items-center">
-            <div className="text-white text-center">
+            <div className="text-white text-center md:text-[14px] text-[13px]">
               <h3>Timeline</h3>
               <p>
                 Here is the breakdown of the time we anticipate using for the
@@ -18,7 +18,9 @@ function TimeLine() {
             </div>
           </div>
 
-          {window.innerWidth > 900 ? (
+          {window.innerWidth < 900 ? (
+            <MobileTimeLine />
+          ) : (
             <div className=" flex justify-center  gap-12 items-center mt-5">
               {/* left */}
               <div className="">
@@ -119,8 +121,6 @@ function TimeLine() {
                 </div>
               </div>
             </div>
-          ) : (
-            <MobileTimeLine />
           )}
         </div>
       </section>

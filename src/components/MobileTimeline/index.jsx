@@ -1,10 +1,5 @@
-import styled from "styled-components";
 import { SVG } from "../../constants/Icons";
-import LeftTimeLine, {
-  MonthTime,
-  Righttime,
-} from "../timelinesection/leftTimeLine";
-import { Colors } from "../../constants/Colors";
+import { MonthTime, Righttime } from "../timelinesection/leftTimeLine";
 
 function MobileTimeLine() {
   return (
