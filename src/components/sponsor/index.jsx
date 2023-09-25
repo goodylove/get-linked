@@ -1,98 +1,42 @@
-import styled from "styled-components";
 import { SVG } from "../../constants/Icons";
-import { Colors } from "../../constants/Colors";
 
 function Sponsor() {
   return (
-    <Wrapper>
-      <h2>Partners and Sponsors</h2>
-      <p>
-        Getlinked Hackathon 1.0 is honored to have the following major companies
-        as its partners and sponsors
-      </p>
-      <img src={SVG.purpleStar} alt="" className="star" />
-      <img src={SVG.purpleStar} alt="" className="star2" />
-      <img src={SVG.star2} alt="" className="star3" />
-      <div className="sponsor-img">
-        <img src={SVG.patnerandsponsort} alt="sponsor" />
-      </div>
-    </Wrapper>
+    <>
+      <div className="h-[1px] w-full  bg-line"></div>
+
+      <section className="flex w-full justify-center items-center my-9 relative">
+        <div className="bg-custom-light  absolute w-[15rem] md:h-[17rem] h-[10rem]    top-[2rem]   rounded-full   md:top-[2rem]    md:left-5  blur-2xl opacity-[0.3]"></div>
+
+        <div className="w-[80%] ">
+          <div className="flex  flex-col gap-2 justify-center items-center text-white text-center">
+            <h2 className=" font-clash font-[700] md:text-[32px]  ">
+              Partners and Sponsors
+            </h2>
+            <p className="text-center text-[14px] font-montserrat leading-3-[27.5px] font-[400] md:w-[452px]">
+              Getlinked Hackathon 1.0 is honored to have the following major
+              companies as its partners and sponsors
+            </p>
+          </div>
+          <img src={SVG.purpleStar} alt="" className="star" />
+          <img
+            src={SVG.purpleStar}
+            alt=""
+            className="absolute md:top-[10rem] md:left-[44rem] left-[14rem]"
+          />
+          <img
+            src={SVG.star2}
+            alt=""
+            className="absolute md:top-[23rem] md:left-[44rem] left-[14rem]  top-[13rem]"
+          />
+          <div className="border-2 border-custom-pink p-6">
+            <img src={SVG.patnerandsponsort} alt="sponsor" className="" />
+          </div>
+          <div className="bg-custom-light  absolute w-[15rem] md:h-[17rem] h-[10rem]    top-[9rem] right-0  rounded-full   md:top-[18rem]    md:right-8  blur-2xl opacity-[0.3]"></div>
+        </div>
+      </section>
+    </>
   );
 }
 
 export default Sponsor;
-
-const Wrapper = styled.section`
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-
-  gap: 2rem;
-  padding: 30px 0;
-  color: white;
-  text-align: center;
-
-  .star {
-    position: absolute;
-    top: 7.7rem;
-    width: 20px;
-    inset: 0px 0px auto auto;
-  }
-  .star2 {
-    position: absolute;
-    top: 14rem;
-    width: 20px;
-    right: 28rem;
-    inset: 0px 0px auto auto;
-  }
-
-  .star3 {
-    position: absolute;
-    top: 24rem;
-    width: 20px;
-    right: 28rem;
-    inset: 0px 0px auto auto;
-  }
-  p {
-    font-size: 14px;
-
-    line-height: 27.5px;
-  }
-  .sponsor-img {
-    display: flex;
-    border: 1px solid ${Colors.pink};
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 500px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    flex-direction: column;
-    p {
-      font-size: 12px;
-
-      line-height: 22.5px;
-      text-align: center;
-    }
-
-    .sponsor-img {
-      display: flex;
-      border: 1px solid ${Colors.pink};
-
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 200px;
-      }
-    }
-  }
-`;
