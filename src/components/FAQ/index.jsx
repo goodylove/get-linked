@@ -15,8 +15,8 @@ export default function FrequentlyAskQuestion() {
     <>
       <div className="h-[1px] w-full  bg-line"></div>
 
-      <section className="w-full flex justify-center items-center relative p-5">
-        <div className="bg-custom-light w-[15rem]  absolute md:w-[20rem] h-[17rem]  hidden md:flex   top-0  rounded-full      blur-2xl opacity-[0.3]"></div>
+      <section className="w-full flex justify-center items-center relative ">
+        <div className="bg-custom-light w-[15rem]  absolute md:w-[20rem] h-[17rem]  hidden md:flex   top-0  rounded-full    right-0   blur-2xl opacity-[0.3]"></div>
         <div className="w-[80%] flex justify-center items-center flex-col md:flex-row gap-8">
           <div>
             <img src={SVG.pinkstart} alt="" />

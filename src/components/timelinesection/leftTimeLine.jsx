@@ -1,45 +1,31 @@
-import styled from "styled-components";
-import { Colors } from "../../constants/Colors";
-
-function LeftTimeLine({ children }) {
-  return <Wrapper>{children}</Wrapper>;
+function LeftTimeLine({ title, subtitle }) {
+  return (
+    <div className="md:leading-[30px] md:text-right leading-[27px]  text-start  ">
+      <h3 className=" text-custom-highlight text-[13px]">{title} </h3>
+      <p className="text-white text-[14px] w-[436px] h-[48px] md:text-end font-[400] font-montserrat">
+        {subtitle}
+      </p>
+    </div>
+  );
 }
 
 export default LeftTimeLine;
 
 export const MonthTime = () => {
-  return <Wrap>November 18, 2023</Wrap>;
+  return (
+    <div className="text-[18px] font-[700] leading-[70.67px] text-custom-light">
+      November 18, 2023
+    </div>
+  );
 };
 
-const Wrapper = styled.div`
-  line-height: 30px;
-  text-align: right;
-  h3 {
-    color: ${Colors.pink};
-    font-size: 13px;
-  }
-  span {
-    color: white;
-    font-size: 14px;
-  }
-
-  @media screen and (max-width: 1000px) {
-    line-height: 27px;
-    text-align: start;
-    h3 {
-      color: ${Colors.pink};
-      font-size: 14px;
-    }
-    span {
-      color: white;
-      font-size: 14px;
-    }
-  }
-`;
-
-const Wrap = styled.div`
-  color: ${Colors.pink};
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 70.67px;
-`;
+export function Righttime({ title, subtitle }) {
+  return (
+    <div className="text-start">
+      <h3 className=" text-custom-highlight leading-[20px]">{title}</h3>
+      <p className="text-white text-[14px] w-[436px] h-[48px] font-montserrat text-start font-[400]">
+        {subtitle}
+      </p>
+    </div>
+  );
+}

@@ -3,6 +3,7 @@ import IntroSection from "../../components/IntroSection";
 import JudgingSection from "../../components/judging";
 import SectionTwo from "../../components/sectionTwo";
 import SectionThree from "../../components/sectionthree";
+import TimeLine from "../../components/timelinesection";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <SectionThree />
       <JudgingSection />
       <FrequentlyAskQuestion />
+      <TimeLine />
       {/* 
      >
 

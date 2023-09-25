@@ -1,7 +1,9 @@
-import { ButtonWrapper } from "./ButtonStyle";
-
 function Button({ children }) {
-  return <ButtonWrapper>{children}</ButtonWrapper>;
+  return (
+    <button className="w-[145px] h-[49px] border-0 text-white rounded-[4px] outline-none  bg-button-gradient">
+      {children}
+    </button>
+  );
 }
 
 export default Button;
