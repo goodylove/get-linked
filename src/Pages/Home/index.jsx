@@ -4,6 +4,7 @@ import JudgingSection from "../../components/judging";
 import SectionTwo from "../../components/sectionTwo";
 import SectionThree from "../../components/sectionthree";
 import TimeLine from "../../components/timelinesection";
+import MobileTimeLine from "./../../components/MobileTimeline/index";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <JudgingSection />
       <FrequentlyAskQuestion />
       <TimeLine />
+
       {/* 
      >
 

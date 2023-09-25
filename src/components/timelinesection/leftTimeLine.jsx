@@ -13,7 +13,7 @@ export default LeftTimeLine;
 
 export const MonthTime = () => {
   return (
-    <div className="text-[18px] font-[700] leading-[70.67px] text-custom-light">
+    <div className="text-[18px] font-[700] leading-[70.67px] text-custom-highlight">
       November 18, 2023
     </div>
   );
@@ -23,7 +23,7 @@ export function Righttime({ title, subtitle }) {
   return (
     <div className="text-start">
       <h3 className=" text-custom-highlight leading-[20px]">{title}</h3>
-      <p className="text-white text-[14px] w-[436px] h-[48px] font-montserrat text-start font-[400]">
+      <p className="text-white text-[14px]  max-w-[440px]   md:w-[436px] md:h-[48px] font-montserrat text-start font-[400]">
         {subtitle}
       </p>
     </div>
