@@ -29,7 +29,10 @@ function JudgingSection() {
             <div>
               {keyAttribute.map(({ title, value }) => {
                 return (
-                  <p className="text-white leading-[24.29px] text-[14px]  text-center md:text-start  font-montserrat font-[700]">
+                  <p
+                    className="text-white leading-[24.29px] text-[14px]  text-center md:text-start  font-montserrat font-[700]"
+                    key={title}
+                  >
                     <span className=" text-custom-highlight">{title}</span>
                     {value}
                   </p>

@@ -29,7 +29,7 @@ function Sponsor() {
             alt=""
             className="absolute md:top-[23rem] md:left-[44rem] left-[14rem]  top-[13rem]"
           />
-          <div className="border-2 border-custom-pink p-6">
+          <div className="border-2 border-custom-pink p-6 rounded">
             <img src={SVG.patnerandsponsort} alt="sponsor" className="" />
           </div>
           <div className="bg-custom-light  absolute w-[15rem] md:h-[17rem] h-[10rem]    top-[9rem] right-0  rounded-full   md:top-[18rem]    md:right-8  blur-2xl opacity-[0.3]"></div>
