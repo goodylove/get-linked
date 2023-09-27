@@ -6,7 +6,7 @@ function Footer() {
   return (
     <section className=" w-full flex flex-col  justify-center items-center">
       <section className="flex justify-center items-center w-[80%] my-5">
-        <div className="w-[100%] flex justify-between  items-center flex-col md:flex-row">
+        <div className="w-[100%] flex justify-between   flex-col md:flex-row  ml-9">
           <div className="section-about relative">
             <img src={SVG.logolink} alt="" />
             <img
@@ -46,20 +46,20 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="contact-us">
+          <div className="contact-us mt-10">
             <h3 className="text-custom-highlight text-[14px]">Contact us</h3>
             <ul className="contact">
-              <li className="text-white flex ">
+              <li className="text-white flex mt-2 gap-2 ">
                 <img src={SVG.phonenum} alt="" />
                 +234 9068557284
               </li>
-              <li className="flex gap-4 justify-start items-start my-2">
+              <li className="flex  gap-2">
                 <span>
                   <img src={SVG.location} alt="" />
                 </span>
-                <p className="text-white  h-[57px] text-[12px] ">
+                <span className="text-white  h-[57px] text-[12px] ">
                   27,Alara Street <br /> Yaba 100012 <br /> Lagos State
-                </p>
+                </span>
               </li>
             </ul>
             <img

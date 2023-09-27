@@ -4,11 +4,12 @@ import Button from "../Button.jsx";
 
 import MobileNav from "./mobilenav";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const navLink = [
   {
     name: "TimeLine",
-    path: "",
+    path: "timeline",
   },
   {
     name: "OverView",
@@ -28,8 +29,8 @@ function NavBar() {
   const [toggle, setToogle] = useState(false);
   const handleToggle = () => setToogle((prev) => !prev);
   const handleClose = () => setToogle(false);
-  console.log(toggle);
 
+  const navigate = useNavigate();
   return (
     <nav className="flex justify-between items-center pt-6 pb-3  px-5 md:px-24 w-full">
       <img src={SVG.logolink} alt="logo" className="" />
@@ -39,14 +40,14 @@ function NavBar() {
           {navLink.map((nav, index) => (
             <li key={index}>{nav.name}</li>
           ))}
-          <Button>Risgister</Button>
+          <Button callback={() => navigate("/register")}>Risgister</Button>
         </ul>
         {/* mobile */}
         <div className=" flex md:hidden">
-          <img src={SVG.mobilehambuger} alt="hambuger" />
+          <img src={SVG.mobilehambuger} alt="hambuger" onClick={handleToggle} />
         </div>
       </div>
-      {/* {toggle && <MobileNav toggle={handleClose} />} */}
+      {toggle && <MobileNav toggle={handleClose} />}
     </nav>
   );
 }

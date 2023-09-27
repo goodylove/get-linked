@@ -1,6 +1,7 @@
-function Button({ children, className }) {
+function Button({ children, className, callback }) {
   return (
     <button
+      onClick={callback}
       className={`${
         className
           ? className
