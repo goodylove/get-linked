@@ -42,9 +42,11 @@ import phonenum from "./ponenum.svg";
 import location from "./location .svg";
 import facebook from "./facebook.svg";
 import elipse from "./elipse.svg";
+import register from "./register.svg";
 
 export const SVG = {
   thirdRuner,
+  register,
   elipse,
   location,
   facebook,

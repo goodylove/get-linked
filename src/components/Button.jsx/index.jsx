@@ -1,6 +1,12 @@
-function Button({ children }) {
+function Button({ children, className }) {
   return (
-    <button className="w-[145px] h-[49px] border-0 text-white rounded-[4px] outline-none  bg-button-gradient">
+    <button
+      className={`${
+        className
+          ? className
+          : "w-[145px] h-[49px] border-0 text-white rounded-[4px] outline-none  bg-button-gradient"
+      }`}
+    >
       {children}
     </button>
   );

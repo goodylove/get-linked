@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Home from "./Pages/Home";
 import Contact, { ContactPage } from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
+import Register from "./Pages/Register";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/register" element={<Rigister />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </main>
   );
