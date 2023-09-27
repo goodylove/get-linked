@@ -1,6 +1,4 @@
-import styled from "styled-components";
 import { SVG } from "../../constants/Icons";
-import { Colors } from "./../../constants/Colors/index";
 
 function Footer() {
   return (

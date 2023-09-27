@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { SVG } from "../../constants/Icons";
 import Button from "../Button.jsx";
 

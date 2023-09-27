@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Colors } from "../../constants/Colors";
 import { SVG } from "../../constants/Icons";
 import Button from "../Button.jsx/index.jsx";
 

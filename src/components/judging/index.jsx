@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import { Colors } from "../../constants/Colors";
 import { SVG } from "../../constants/Icons";
 import Button from "../Button.jsx/index.jsx";
 import { keyAttribute } from "./keyattributedata";
