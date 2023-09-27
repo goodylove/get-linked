@@ -43,9 +43,13 @@ import location from "./location .svg";
 import facebook from "./facebook.svg";
 import elipse from "./elipse.svg";
 import register from "./register.svg";
+import female from "./female.svg";
+import male from "./male.svg";
 
 export const SVG = {
   thirdRuner,
+  female,
+  male,
   register,
   elipse,
   location,

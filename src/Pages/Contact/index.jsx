@@ -33,10 +33,16 @@ function ContactPage() {
             </li>
           </ul>
         </div>
-        <div className=" max-[400px]">
+
+        <div className="   relative">
+          <div className="flex justify-end items-end  text-end ">
+            <img src={SVG.graystar} alt="" className="w-[20px] " />
+          </div>
+          <img src={SVG.pinkstart} alt="" className="absolute top-80" />
+          <img src={SVG.star2} alt="" className="absolute top-80 right-2" />
           <form
             action=""
-            className="flex flex-col items-start justify-start gap-5 w-full border-2 px-14 py-8 border-purple-400 rounded-4"
+            className="flex flex-col items-start justify-start gap-5 w-full  px-14 py-8 shadow-3xl  bg-[#1C152E] rounded-4"
           >
             <p className="text-custom-highlight max-w-[271px] text-start ">
               Questions or need assistance? Let us know about it!
