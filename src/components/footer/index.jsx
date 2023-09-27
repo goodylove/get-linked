@@ -5,16 +5,16 @@ import { Colors } from "./../../constants/Colors/index";
 function Footer() {
   return (
     <section className=" w-full flex flex-col  justify-center items-center">
-      <section className="flex justify-center items-center w-[80%] my-5">
-        <div className="w-[100%] flex justify-between   flex-col md:flex-row  ml-9">
+      <section className="flex justify-center  w-[80%] my-5">
+        <div className="w-[100%] flex justify-between   flex-col md:flex-row  ml-9 gap-2 ">
           <div className="section-about relative">
-            <img src={SVG.logolink} alt="" />
+            <img src={SVG.logolink} alt="" className="" />
             <img
               src={SVG.star2}
               alt="star"
               className="star absolute left-[-50px] w-[10px]"
             />
-            <p className="text-white text-[12px] w-[271px]">
+            <p className="text-white text-[12px] w-[271px] my-5">
               Getlinked Tech Hackathon is a technology innovation program
               established by a group of organizations with the aim of showcasing
               young and talented individuals in the field of technology
@@ -46,7 +46,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="contact-us mt-10">
+          <div className="contact-us ">
             <h3 className="text-custom-highlight text-[14px]">Contact us</h3>
             <ul className="contact">
               <li className="text-white flex mt-2 gap-2 ">

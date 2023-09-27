@@ -6,7 +6,10 @@ function TimeLine() {
   return (
     <>
       <div className="h-[1px] w-full  bg-line"></div>
-      <section className="w-full flex justify-center items-center  my-10 ">
+      <section
+        className="w-full flex justify-center items-center  my-10 "
+        id="timeline"
+      >
         <div className="flex flex-col justify-center items-center w-full">
           <div className="flex flex-col justify-center items-center">
             <div className="text-white text-center md:text-[14px] text-[13px]">

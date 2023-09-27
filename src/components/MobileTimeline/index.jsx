@@ -3,7 +3,10 @@ import { MonthTime, Righttime } from "../timelinesection/leftTimeLine";
 
 function MobileTimeLine() {
   return (
-    <section className=" flex w-full justify-center items-center mt-10">
+    <section
+      className=" flex w-full justify-center items-center mt-10"
+      id="timeline"
+    >
       <div className="w-[80%] justify-center flex items-center ">
         <div className="w-[100%] justify-center flex flex-col ">
           <div className="flex justify-center items-center gap-5">
