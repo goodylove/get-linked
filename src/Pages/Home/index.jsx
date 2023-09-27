@@ -8,6 +8,8 @@ import SectionTwo from "../../components/sectionTwo";
 import SectionThree from "../../components/sectionthree";
 import Sponsor from "../../components/sponsor";
 import TimeLine from "../../components/timelinesection";
+import { AiOutlineArrowUp } from "react-icons/ai";
+import { Link as Links, animateScroll as scroll } from "react-scroll";
 
 function Home() {
   return (
@@ -23,6 +25,15 @@ function Home() {
       <Sponsor />
       <PravicySection />
       <Footer />
+      <Links
+        to="top"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className=" fixed bottom-[180px] right-4  h-[40px] w-[40px] rounded-full bg-custom-light text-white flex justify-center items-center"
+      >
+        <AiOutlineArrowUp />
+      </Links>
     </>
   );
 }

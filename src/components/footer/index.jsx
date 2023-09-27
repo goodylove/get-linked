@@ -4,7 +4,7 @@ import { Colors } from "./../../constants/Colors/index";
 
 function Footer() {
   return (
-    <section className=" w-full flex flex-col  justify-center items-center">
+    <section className=" w-full flex flex-col  justify-center items-center bg-[#100B20]">
       <section className="flex justify-center  w-[80%] my-5">
         <div className="w-[100%] flex justify-between   flex-col md:flex-row  ml-9 gap-2 ">
           <div className="section-about relative">

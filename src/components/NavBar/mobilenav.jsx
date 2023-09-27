@@ -6,7 +6,7 @@ import { Link as Links, animateScroll as scroll } from "react-scroll";
 function MobileNav({ toggle }) {
   const navigate = useNavigate();
   return (
-    <div className="flex  top-[27px] mobile   items-center ronded-[5px] cursor-pointer shadow-xl  h-[330px] w-[330px] absolute left-[102px] bg-[#150e28] p-5 ">
+    <div className="flex  top-[27px] mobile   items-center ronded-[5px] cursor-pointer shadow-xl  h-[330px] w-[330px] absolute left-[102px] bg-[#150e28]  ">
       <div className="w-full">
         <div>
           <div
@@ -17,7 +17,7 @@ function MobileNav({ toggle }) {
               x
             </span>
           </div>
-          <ul className="text-white block ">
+          <ul className="text-white block  pl-5">
             {navLink.map((path, index) => (
               <Links
                 to={path.path}
@@ -28,16 +28,22 @@ function MobileNav({ toggle }) {
               >
                 <li
                   onClick={toggle}
-                  className="py-[10px] hover:text-fuchsia-600 cursor-pointer"
+                  className="py-[19px] hover:text-fuchsia-600 cursor-pointer"
                 >
                   {path.name}
                 </li>
               </Links>
             ))}
-            <Link to="/register">
-              <Button callback={toggle}>Register</Button>
+            <Link
+              to="/contact "
+              className="hover:text-fuchsia-600 cursor-pointer my-3"
+            >
+              Contact
             </Link>
           </ul>
+          <Link to="/register" className="py-5 px-3">
+            <Button callback={toggle}>Register</Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -36,7 +36,10 @@ function NavBar() {
 
   const navigate = useNavigate();
   return (
-    <nav className="flex justify-between items-center pt-6 pb-3  px-5 md:px-24 w-full">
+    <nav
+      className="flex justify-between items-center pt-6 pb-3  px-5 md:px-24 w-full"
+      id="top"
+    >
       <Link to="/">
         <img src={SVG.logolink} alt="logo" className="" />
       </Link>
