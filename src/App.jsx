@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import { SVG } from "./constants/Icons";
 import Button from "./components/Button.jsx";
 import NavBar from "./components/NavBar";
